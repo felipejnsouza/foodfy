@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
     
     {% block title %}
-        <title>Foodfy - Receitas</title>
+        <title>Foodfy - {{dishes.title}}</title>
     {% endblock title %}
 
     {% block style %}
@@ -20,13 +20,13 @@
         
                 
                     <div class="foto">
-                        <img src="/assets/burger.png" alt="">
+                        <img src="{{dishes.image}}" alt="">
                     </div>
                     <div class="dishName">
-                        <h1>Triplo bacon burger</h1>
+                        <h1>{{dishes.title}}</h1>
                     </div>
                     <div class="author">
-                        <p>por Jorge Relato</p>
+                        <p>por {{dishes.author}}</p>
                     </div>
         </div>
         
@@ -39,12 +39,9 @@
                 
                 <div class="list">
                     <ul>
-                        <li>3 kg de carne</li>
-                        <li>300 g de bacon</li>
-                        <li>1 OVO</li>
-                        <li>3 COLHERES</li>
-                        <li>3 colheres</li>
-                        <li>30 ml de agua</li>
+                        {% for ingredient in dishes.ingredients%}
+                        <li>{{ingredient}}</li>
+                        {% endfor%}
                     </ul>
                 </div>
             </div>
@@ -53,14 +50,18 @@
                 <div class="title">
                 <h3>Modo de preparo</h3><a>MOSTRAR</a>
                 </div>
-                <p>Misturar tudo</p>   
+                {% for line in dishes.preparation %}
+                <p>{{line}}</p>   
+                {% endfor %}
             </div>
 
             <div class="info">
                 <div class="title">
                 <h3>Informações adicionais</h3><a>ESCONDER</a>
                 </div>
-                <p>preaqueça a chapa</p>
+                
+                <p>{{dishes.information}}</p>   
+               
             </div>
         </div>
 

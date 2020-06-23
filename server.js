@@ -23,4 +23,16 @@ server.get('/recipes', (require, response) => {
     response.render('recipes', {dishes: data})
 })
 
-server.get('/recipe', (require, response) => response.render('recipe'))
+server.get('/recipe', (require, response) => {
+    
+    const id = require.query.id
+
+    const dish = data.find((dish)=> dish.title == id)
+    
+    
+    if(!dish){return response.send("dish not found!")}
+    
+    return response.render("recipe", {dishes: dish})
+   
+
+})
