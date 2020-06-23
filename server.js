@@ -33,6 +33,6 @@ server.get('/recipe', (require, response) => {
     if(!dish){return response.send("dish not found!")}
     
     return response.render("recipe", {dishes: dish})
-   
-
 })
+
+server.get('*', (require, response) => response.send("Sorry, page not found! 404 "))
