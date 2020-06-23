@@ -12,6 +12,6 @@ for(let card of cards){
 })
 }
 
-document.querySelector(".close-modal a").addEventListener("click", ()=>{
-    modal.classList.remove("active")
-})
+// document.querySelector(".close-modal a").addEventListener("click", ()=>{
+//     modal.classList.remove("active")
+// })

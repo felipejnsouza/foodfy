@@ -1,0 +1,73 @@
+{% extends "layout.njk" %}
+    
+    {% block title %}
+        <title>Foodfy - Receitas</title>
+    {% endblock title %}
+
+    {% block style %}
+        <link rel="stylesheet" href="recipe.css">
+    {% endblock style %}
+
+    {% block menu %}
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/about">Sobre</a>
+        </div>
+    {% endblock menu %}
+       
+    {% block contents %}
+        <div class="banner">
+        
+                
+                    <div class="foto">
+                        <img src="/assets/burger.png" alt="">
+                    </div>
+                    <div class="dishName">
+                        <h1>Triplo bacon burger</h1>
+                    </div>
+                    <div class="author">
+                        <p>por Jorge Relato</p>
+                    </div>
+        </div>
+        
+        <div class="dish-info">
+            <div class="ingredients">
+                <div class="title">
+                    <h3>Ingredientes</h3>
+                    <a>ESCONDER</a>
+                </div>
+                
+                <div class="list">
+                    <ul>
+                        <li>3 kg de carne</li>
+                        <li>300 g de bacon</li>
+                        <li>1 OVO</li>
+                        <li>3 COLHERES</li>
+                        <li>3 colheres</li>
+                        <li>30 ml de agua</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prepare">
+                <div class="title">
+                <h3>Modo de preparo</h3><a>MOSTRAR</a>
+                </div>
+                <p>Misturar tudo</p>   
+            </div>
+
+            <div class="info">
+                <div class="title">
+                <h3>Informações adicionais</h3><a>ESCONDER</a>
+                </div>
+                <p>preaqueça a chapa</p>
+            </div>
+        </div>
+
+    {% endblock contents %}
+
+    
+
+    {% block script %}
+        <script src="/script.js"></script>
+    {% endblock script %}
