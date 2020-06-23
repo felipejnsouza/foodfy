@@ -19,161 +19,22 @@
         <div class="recipes">
         
             <div class="cards">
+                
+                {% for dish in dishes %}
                 <div class="card">
                     <div class="foto">
-                        <img src="/assets/burger.png" alt="">
+                        <img src="{{dish.image}}" alt="">
                     </div>
                     <div class="dishName">
-                        <h3>Triplo bacon burger</h3>
+                        <h3>{{dish.title}}</h3>
                     </div>
                     <div class="author">
-                        <p>por Jorge Relato</p>
+                        <p>por {{dish.author}}</p>
                     </div>
 
                 </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/pizza.png" alt="Imagem de uma pizza">
-                    </div>
-                    <div class="dishName">
-                        <h3>Pizza 4 estações</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Fabiana Melo</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/espaguete.png" alt="Prato de espaguete">
-                    </div>
-                    <div class="dishName">
-                        <h3>Espaguete ao alho</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Júlia Kinoto</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/lasanha.png" alt="Prato de lasanha">
-                    </div>
-                    <div class="dishName">
-                        <h3>Lasanha mac n' cheese</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Juliano Vieira</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/doce.png" alt="Prato de doce">
-                    </div>
-                    <div class="dishName">
-                        <h3>Docinhos pão-do-céu</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Ricardo Goves</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/asinhas.png" alt="Prato de asinhas">
-                    </div>
-                    <div class="dishName">
-                        <h3>Asinhas de frango ao barbecue</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Vania Steroski</p>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/burger.png" alt="">
-                    </div>
-                    <div class="dishName">
-                        <h3>Triplo bacon burger</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Jorge Relato</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/pizza.png" alt="Imagem de uma pizza">
-                    </div>
-                    <div class="dishName">
-                        <h3>Pizza 4 estações</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Fabiana Melo</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/espaguete.png" alt="Prato de espaguete">
-                    </div>
-                    <div class="dishName">
-                        <h3>Espaguete ao alho</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Júlia Kinoto</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/lasanha.png" alt="Prato de lasanha">
-                    </div>
-                    <div class="dishName">
-                        <h3>Lasanha mac n' cheese</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Juliano Vieira</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/doce.png" alt="Prato de doce">
-                    </div>
-                    <div class="dishName">
-                        <h3>Docinhos pão-do-céu</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Ricardo Goves</p>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="foto">
-                        <img src="/assets/asinhas.png" alt="Prato de asinhas">
-                    </div>
-                    <div class="dishName">
-                        <h3>Asinhas de frango ao barbecue</h3>
-                    </div>
-                    <div class="author">
-                        <p>por Vania Steroski</p>
-                    </div>
-
-                </div>
-
+                {% endfor%}
+                
             </div>
         </div>
 
