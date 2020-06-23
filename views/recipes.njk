@@ -34,6 +34,20 @@
 
                 </div>
                 {% endfor%}
+                {% for dish in dishes %}
+                <div class="card" id="{{dish.title}}">
+                    <div class="foto">
+                        <img src="{{dish.image}}" alt="">
+                    </div>
+                    <div class="dishName">
+                        <h3>{{dish.title}}</h3>
+                    </div>
+                    <div class="author">
+                        <p>por {{dish.author}}</p>
+                    </div>
+
+                </div>
+                {% endfor%}
                 
             </div>
         </div>
