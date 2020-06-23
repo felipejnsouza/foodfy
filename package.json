@@ -1,0 +1,16 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "description": "A recipes site project by Launchbase bootcamp - Rocketseat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Felipe Souza",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  }
+}
