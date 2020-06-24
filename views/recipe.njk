@@ -11,7 +11,7 @@
     {% block menu %}
         <div class="menu">
             <a href="/">Home</a>
-            <a href="/about">Sobre</a>
+            <a href="/recipes">Receitas</a>
         </div>
     {% endblock menu %}
        
@@ -20,7 +20,7 @@
         
                 
                     <div class="foto">
-                        <img src="{{dishes.image}}" alt="">
+                        <img src="{{dishes.image}}" alt="Imagem de {{dishes.title}}">
                     </div>
                     <div class="dishName">
                         <h1>{{dishes.title}}</h1>
